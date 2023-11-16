@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/d4e1b9f057.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kawi&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-between col-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                ><i class="fa-solid fa-house"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="fa-solid fa-address-card"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="fa-solid fa-people-group"></i
+              ></a>
+            </li>
+          </ul>
+          <ul class="d-flex justify-content-center me-auto col-7 mb-lg-1">
+            <form class="d-flex col-6">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar productos"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </ul>
+          <ul class="navbar-nav justify-content-between col-2 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./login.html"
+                ><i class="fa-solid fa-user"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./registro.html"
+                ><i class="fa-solid fa-user-plus"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Detalle del producto -->
+    <div class="card" style="margin:8.5rem 3rem; ">
+      <div class="row g-0 align-items-center align-middle">
+        <div class="col-md-4 mx-auto">
+          <img src="imgBooks/Ciencia-ficcion/1984.jpg" class="img-fluid rounded-start" alt="1984 George Orwell" />
+        </div>
+        <div class="col-md-5  align-items-center justify-content-center text-center">
+          <!-- Detalles del producto -->
+          <div class=" text-center p-3">
+            <p class="card-text fs-2">Titulo: 1984</p>
+            <p class="card-text fs-2">Autor: George Orwell</p>
+          </div>
+          <div class="p-5 ">
+            <p class="card-text fw-bold text-decoration-underline fs-3">Sinopsis</p>
+            <p class="card-text text-start">
+              En el año 1984 Londres es una ciudad lúgubre en la que la Policía del Pensamiento controla de forma asfixiante la vida de los ciudadanos. Winston Smith es un peón de este engranaje perverso y su cometido es reescribir la historia para adaptarla a lo que el Partido considera la versión oficial de los hechos.
+            </p>
+          </div>
+          <div class="text-center p-3">
+            <p>Fecha de publicacion: 8 de Junio de 1949</p>
+            <p>Pais: Reino Unido</p>
+            <p>Paginas: 326</p>
+          </div>
+        </div>
+          
+          <!-- Precios e información del vendedor -->
+        <div class="col-md-2 d-flex justify-content-between flex-column border border-gray p-3 mx-auto" style="height: 30rem;">
+          <div class="align-items-center text-center bg-light my-3">
+            <label for="text" class="col-9">Precio por unidad</label>
+            <input type="text" name="text" value="AR$ 30.000" class=" bg-transparent text-center border-0 text-success fw-bold col-3" style="width: auto;" disabled>
+          </div>
+          <input type="button" value="Comprar ahora" class="btn btn-success my-3">
+          <input type="button" value="Agregar al carrito" class="btn btn-secondary my-3">
+          <p class="text-center fs-6 text-secondary mb-0">Vendido por Anonimo4675</p>
+          <img src="./Imagenes/solar-stars.svg" alt="3.5 estrellas" style="width: 10rem; padding: 0; margin: 0; margin: auto;">
+          <input type="button" value="Ver otros productos del vendedor" class="bg-transparent border-0 text-decoration-underline fs-6 card-text ">
+          <input type="button" value="Comentarios de compradores" class="bg-transparent border-0 my-4 text-decoration-underline ">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="d-flex bg-dark justify-content-between p-3 fs-5">
+      <div class="d-flex col-4 justify-content-between align-middle">
+        <div class="d-flex col-4 justify-content-center olga">
+          <i class="text-white text-decoration-none"
+            ><i class="fa-solid fa-satellite"></i
+          ></i>
+          <span>l</span>
+          <p class="text-white m-0 logo-text">Bookrease</p>
+        </div>
+        <div class="d-flex col-4 justify-content-center olga">
+          <a href="#" class="text-white text-decoration-none">Instagram</a>
+        </div>
+        <div class="d-flex col-4 justify-content-center olga">
+          <a href="#" class="text-white text-decoration-none">Facebook</a>
+        </div>
+      </div>
+      <div
+        class="d-flex col-3 text-end olga2 justify-content-center align-middle"
+      >
+        <i class="fa-solid fa-location-dot text-white"></i>
+        <span>l</span>
+        <p class="text-white m-0">Culpina 1110, Oficina 2 B, CABA</p>
+      </div>
+    </footer>
+  </body>
+</html>

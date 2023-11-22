@@ -16,10 +16,11 @@
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
     ></script>
+    <!-- <link rel="stylesheet" href="./css/registro.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,56 +31,47 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav justify-content-between col-3 mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
-                ><i class="fa-solid fa-house"></i
-              ></a>
+            <li class="nav-item d-flex">
+              <a class="nav-link active" aria-current="page" href="./index.html"><i class="fa-solid fa-house"></i></a>
+              <p class="text-white p-2">Home</p>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                ><i class="fa-solid fa-address-card"></i
-              ></a>
+            <li class="nav-item d-flex">
+              <a class="nav-link active" aria-current="page" href="./Contact.html"><i
+                  class="fa-solid fa-address-card"></i></a>
+              <p class="text-white p-2">Contacto</p>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                ><i class="fa-solid fa-people-group"></i
-              ></a>
+            <li class="nav-item d-flex">
+              <a class="nav-link active" aria-current="page" href="./about.html"><i class="fa-solid fa-people-group"></i></a>
+              <p class="text-white p-2">Acerca de Nosotros</p>
             </li>
           </ul>
-          <ul class="d-flex justify-content-center me-auto col-7 mb-lg-1">
+          <ul class="d-flex justify-content-center me-auto col-6 mb-lg-1">
             <form class="d-flex col-6">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Buscar productos"
-                aria-label="Search"
-              />
+              <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search" />
               <button class="btn btn-outline-success" type="submit">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
             </form>
           </ul>
-          <ul class="navbar-nav justify-content-between col-2 mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                ><i class="fa-solid fa-cart-shopping"></i
-              ></a>
+          <ul class="navbar-nav justify-content-between col-2 mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item d-flex">
+              <a class="nav-link active" aria-current="page" href="./detalle de compra.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              <p class="text-white p-2">Carrito</p>
             </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./login.html"
-                  ><i class="fa-solid fa-user"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./registro.html"
-                  ><i class="fa-solid fa-user-plus"></i
-                ></a>
-              </li>
+            <li class="nav-item d-flex">
+              <a class="nav-link active" aria-current="page" href="./login.html"><i class="fa-solid fa-user"></i></a>
+              <p class="text-white p-2">Login</p>
+            </li>
+            <li class="nav-item d-flex">
+              <a class="nav-link active" aria-current="page" href="./registro.html"><i
+                  class="fa-solid fa-user-plus"></i></a>
+              <p class="text-white p-2">Registro</p>
+            </li>
           </ul>
         </div>
       </div>
@@ -120,11 +112,27 @@
               <div class="mb-3">
                 <input type="button" class="btn btn-primary container-fluid" value="Facebook">
               </div>
-              <button type="submit" class="btn btn-dark">Registrarse</button>
+              <input type="submit" class="btn btn-dark" value="Registrarse"></input>
             </form>
           </div>
         </div>
       </div>
+      <!-- <form>
+        <h2>REGISTRO</h2>
+        <input type="text" placeholder="NOMBRE" required minlength="2" maxlength="10">
+        <INput type="text" placeholder="APELLIDO" required minlength="2" maxlength="15">
+        <input type="text" placeholder=" USUARIO"required minlength="4" maxlength="8">
+        <input type="password" placeholder=" CONTRASEñA" required minlength="4" maxlength=" 10">
+        <INput type="email" placeholder="MAIL" required minlength="4" maxlength="20">
+        <input type="number" placeholder="TELEFONO"required  min="8" max="10">
+        <INput type="texto " placeholder="DOMICILIO" required minlength="8" maxlength="10">
+        <input type="number"placeholder="CODIGO POSTAL" required min="1000" max="5000">
+        <br>
+        <br>
+
+        <input type="submit" class="btn" value="ENVIAR">
+
+    </form> -->
 
     <footer class="d-flex bg-dark justify-content-between p-3 fs-5">
       <div class="d-flex col-4 justify-content-between align-middle">
@@ -133,13 +141,13 @@
             ><i class="fa-solid fa-satellite"></i
           ></i>
           <span>l</span>
-          <p class="text-white m-0 logo-text">Bookrease</p>
+          <p class="text-white m-0 logo-text">Gulubú</p>
         </div>
         <div class="d-flex col-4 justify-content-center olga">
-          <a href="#" class="text-white text-decoration-none">Instagram</a>
+          <a href="./404.html" class="text-white text-decoration-none">Instagram</a>
         </div>
         <div class="d-flex col-4 justify-content-center olga">
-          <a href="#" class="text-white text-decoration-none">Facebook</a>
+          <a href="./404.html" class="text-white text-decoration-none">Facebook</a>
         </div>
       </div>
       <div
@@ -147,7 +155,7 @@
       >
         <i class="fa-solid fa-location-dot text-white"></i>
         <span>l</span>
-        <p class="text-white m-0">Culpina 1110, Oficina 2 B, CABA</p>
+        <p class="text-white m-0">Lopez de Morales 4518, Oficina 2 B, La Rioja</p>
       </div>
     </footer>
   </body>

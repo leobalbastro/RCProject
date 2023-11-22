@@ -1,0 +1,19 @@
+body{ background-color: rgb(253, 251, 248);}
+
+.container{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+input{
+    padding: 15px 30px;
+    border-radius:  15px;
+    border: none;
+}
+
+input:hover{
+    background-color: gray;
+    color: white;
+}

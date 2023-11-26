@@ -18,16 +18,16 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav justify-content-between col-3 mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active d-flex justify-content-center align-items-center" aria-current="page"
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <ul class="navbar-nav justify-content-between col-xl-4 mb-2">
+          <li class="nav-item d-flex">
+            <a class="nav-link active d-flex  align-items-center" aria-current="page"
               href="./index.html"><i class="fa-solid fa-house"></i>
               <p class="text-white p-2 my-0 mx-0 text-center">Home</p>
             </a>
@@ -48,15 +48,15 @@
 
           </li>
         </ul>
-        <ul class="d-flex justify-content-center me-auto col-6 mb-lg-1">
-          <form class="d-flex col-6">
-            <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit">
+        <ul class="col-xl-3 align-items-center d-sm-none d-md-none d-xl-block  justify-content-center  mb-lg-1">
+          <form class="d-flex col-xl-10 align-items-center" action="./404.html">
+            <input class="form-control mx-auto me-2" type="search" placeholder="Buscar productos" aria-label="Search" />
+            <button class="btn btn-outline-success col-xl-2" type="submit">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
         </ul>
-        <ul class="navbar-nav justify-content-between col-2 mb-2 mb-lg-0 mx-auto">
+        <ul class="navbar-nav justify-content-between col-xl-4 mb-2 mb-lg-0">
           <li class="nav-item d-flex">
             <a class="nav-link active d-flex justify-content-center align-items-center" aria-current="page"
               href="./detalle de compra.html"><i class="fa-solid fa-cart-shopping"></i>
@@ -83,28 +83,36 @@
     </div>
   </nav>
   <div class="container">
-    <img src="./Imagenes/404.jpeg" alt="web no disponible 404">
+    <img src="./Imagenes/404.jpeg" alt="web no disponible 404" class="img-fluid">
     <h1>La pagina solicitada no esta disponible.</h1>
-    <BR></BR>
     <a href="./index.html">
       <input type="button" value="Volver atras"></input>
     </a>
   </div>
-  <footer class="d-flex bg-dark justify-content-between p-3 fs-5">
-    <div class="d-flex col-4 justify-content-between align-middle">
-      <div class="d-flex col-4 justify-content-center olga">
+  <footer class="d-flex d-xs-flex bg-dark justify-content-between p-3 fs-6 col-12 container-fluid">
+    <div class="d-flex d-lg-flex col-12 col-sm-12 col-md-12 col-lg-8 text-lg-end justify-content-between align-items-center">
+      <div class="d-flex col-4 col-sm-6 col-md-6 col-lg-6 justify-content-start ">
         <i class="text-white text-decoration-none"><i class="fa-solid fa-satellite"></i></i>
         <span>l</span>
         <p class="text-white m-0 logo-text">Gulubú</p>
       </div>
-      <div class="d-flex col-4 justify-content-center olga">
-        <a href="./404.html" class="text-white text-decoration-none">Instagram</a>
+      <div class="d-none d-sm-flex col-4 col-sm-6 col-md-6 col-lg-6 justify-content-between align-items-center text-center">
+        <div class="d-flex col-4 col-sm-3 col-md-3">
+          <a href="./404.html" class="text-white text-decoration-none">Instagram</a>
+        </div>
+        <div class="d-none d-sm-flex col-4 col-sm-3 col-md-3">
+          <a href="./404.html" class="text-white text-decoration-none">Facebook</a>
+        </div>
       </div>
-      <div class="d-flex col-4 justify-content-center olga">
-        <a href="./404.html" class="text-white text-decoration-none">Facebook</a>
+      <div class="container d-flex d-sm-none justify-content-between align-items-center col-8">
+        <div class="d-flex col-4 col-sm-3 col-md-3">
+          <a href="./404.html" class="text-white text-decoration-none">Instagram</a>
+        </div>
+        <div class="d-flex col-4 col-sm-3 col-md-3">
+          <a href="./404.html" class="text-white text-decoration-none">Facebook</a>
+        </div>
       </div>
-    </div>
-    <div class="d-flex col-xl-3 col-md-0 text-xl-end justify-content-center align-items-center">
+    <div class="d-none d-lg-flex col-0 col-sm-0 col-md-0 col-lg-4 text-lg-end justify-content-center align-items-center">
       <i class="fa-solid fa-location-dot text-white"></i><p class="text-white my-0 mx-0 p-2 text-center ">Lopez de Morales 4518, Oficina 2 B, La Rioja</p>      
     </div>
   </footer>

@@ -84,34 +84,33 @@
     </div>
   </nav>
   <!-- Login -->
-  <div class="container">
-    <div class="row justify-content-center align-items-center" style="height: 87.2vh;">
+  <div class="container-fluid my-4 py-2">
+    <div class="row justify-content-center align-items-center">
       <div class="col-md-3 border border-secondary p-4 bg-light">
         <form class="text-end" action="404.html">
           <div class="mb-3 text-start">
             <label for="nombre" class="form-label">Nombre y Apellido</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre completo">
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre completo" minlength="2" maxlength="10">
           </div>
           <div class="mb-3 text-start">
             <label for="nombre" class="form-label">Usuario</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su usuario">
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su usuario" minlength="4" maxlength="7">
           </div>
           <div class="mb-3 text-start">
             <label for="password" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" minlength="7" maxlength="12">
           </div>
           <div class="mb-3 text-start">
             <label for="nombre" class="form-label">Correo Electronico</label>
-            <input type="email" class="form-control" id="nombre" placeholder="Ingrese su correo electronico">
+            <input type="email" class="form-control" id="nombre" placeholder="Ingrese su correo electronico" minlength="14" maxlength="32">
           </div>
           <div class="mb-3 text-start">
             <label for="nombre" class="form-label">Telefono</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su Domicilio">
+            <input type="tel" class="form-control" id="nombre" placeholder="Ingrese su Telefono" >
           </div>
           <div class="mb-3 text-start">
             <label for="nombre" class="form-label">Codigo Postal</label>
-            <input type="number" class="form-control" id="nombre" placeholder="Ingrese su usuario"
-              pattern="[A-Za-z]\d{4}">
+            <input type="number" class="form-control" id="nombre" placeholder="Ingrese su usuario" minlength="5">
           </div>
           <hr>
           <div class="mb-3">
